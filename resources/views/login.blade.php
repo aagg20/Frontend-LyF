@@ -1,5 +1,4 @@
 
-
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
   <head><script src="/docs/5.3/assets/js/color-modes.js"></script>
@@ -9,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.122.0">
-    <title>Confecciones LyF</title>
+    <title>Login LyF</title>
 
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
@@ -22,6 +21,7 @@
 <link rel="manifest" href="{{ asset('/favicons/manifest.json') }}">
 <link rel="icon" href="{{ asset('favicon.ico') }}">
 <meta name="theme-color" content="#712cf9">
+
 
 
     <style>
@@ -105,10 +105,10 @@
 
     
     <!-- Custom styles for this template -->
-    <link link rel="stylesheet" href="{{ asset('assets/css/carousel.css') }}">
-    {{-- <link href="{{ asset('carousel.css') }}" rel="stylesheet"> --}}
+    <link href="{{ asset('assets/css/login.css') }}" rel="stylesheet">
   </head>
-  <body>
+  <body class="d-flex align-items-center py-4 bg-body-tertiary">
+    <div class='parent_image1'>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
         <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -161,159 +161,34 @@
     </div>
 
     
-<header data-bs-theme="dark">
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-      <img src="{{ asset('/assets/images/lyflogo5v2SM.png')}}" alt="">
-      <a class="navbar-brand" href="{{ route('catalogo') }}">Catalogo</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
-          </li>
-          {{-- <li class="nav-item">
-            <a class="nav-link" aria-disabled="true">Login</a>
-          </li> --}}
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
+<main class="form-signin w-100 m-auto">
+  <form>
+    <img class="mb-4" src="{{ asset('assets/images/lyflogo5v2.png')}}" alt="" width="280" height="50">
+    <h1 class="h3 mb-3 fw-normal">Bienvenido, por favor</h1>
+    <h1 class="h3 mb-3 fw-normal">ingrese sus datos</h1>
+
+    <div class="form-floating">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Email address</label>
     </div>
-  </nav>
-</header>
-
-<main>
-
-  {{-- Carousel --}}
-  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="{{ asset('assets/images/pexels-karolina-grabowska-4210863.jpg')}}" alt="">
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <h1>Visita nuestro catalogo</h1>
-            <p class="opacity-75">Aqui encontraras todos los estilos que ofrecemos</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Visitar</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="{{ asset('assets/images/jeans-5394561_640.jpg') }}" alt="">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Trabaja con nosotros</h1>
-            <p>Aplica ya en nuestra plataforma</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Aplica ya</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="{{ asset('assets/images/jeans-428615_640.jpg')}}" alt="">
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>Plataforma de clientes</h1>
-            <p>Configura aqui tus ordenes y estatus</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Ingresar</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previo</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Siguiente</span>
-    </button>
-  </div>
-  {{-- Fin del carrusel --}}
-
-    <!-- COMIENZA LA INFORMACION DE LA EMPRESA -->
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">Nuestra experiencia<span class="text-body-secondary"> de 2 decadas</span></h2>
-        <p class="lead">Nos permite garantizar un producto de excelente calidad a un precio justo</p>
-      </div>
-      <div class="col-md-5">
-        <img class= "bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"  src="{{ asset('assets/images/outfits-4926399_640.jpg')}}" alt="">
-      </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Clave</label>
     </div>
 
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Mision, Vision <span class="text-body-secondary">Confecciones LyF</span></h2>
-        <p class="lead">Queremos convertirnos en su proveedor de confianza para vestir a sus empleados y estudiantes.</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <img class= "bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"  src="{{ asset('/assets/images/pexels-neosiam-603022.jpg')}}" alt="">
-      </div>
+    <div class="form-check text-start my-3">
+      <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Recordarme
+      </label>
     </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">Estamos localizados en la ciudad de <span class="text-body-secondary">Pereira, Colombia.</span></h2>
-        <p class="lead">Avenida del Libertador No. 23-87</p>
-        <p>Telefono: 602 987 654 3210</p>
-        <p>Celular: 300 100 200 3000</p>
-        <p>Horario de atencion: Lu - Vi 8 am - 5 pm</p>
-      </div>
-      <div class="col-md-5">
-        <img src="{{ asset('assets/images/mapaG.jpg') }}" alt="">
-        {{-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> --}}
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <!-- /END THE FEATURETTES -->
-
-  </div>
-  <!-- /.container -->
-
-  <!-- FOOTER -->
-  <div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <p class="float-end"><a href="#">Volver al principio</a></p>
-      <div class="col-md-4 d-flex align-items-center">
-        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-        </a>
-        <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Confecciones LyF SAS</span>
-      </div>
-  
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-      </ul>
-    </footer>
-  </div>
+    <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+    <p class="mt-5 mb-3 text-body-secondary">&copy; 2024 Confecciones LyF SAS</p>
+  </form>
 </main>
-
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-      
-  </body>
+</div>
+    </body>
 </html>
