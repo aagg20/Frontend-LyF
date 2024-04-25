@@ -160,7 +160,7 @@
     </div>
 
     
-<header data-bs-theme="dark">
+{{-- <header data-bs-theme="dark">
   <div class="collapse text-bg-dark" id="navbarHeader">
     <div class="container">
       <div class="row">
@@ -190,7 +190,37 @@
       </button>
     </div>
   </div>
+</header> --}}
+
+<header data-bs-theme="dark">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <img class="logolyf" src="{{ asset('/assets/images/lyflogo5v2SM.png')}}" alt="">
+      <a class="navbar-brand" href="#">Catalogo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+          {{-- <li class="nav-item">
+            <a class="nav-link" aria-disabled="true">Login</a>
+          </li> --}}
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 </header>
+
 
 <main>
 
@@ -198,7 +228,7 @@
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-light">Catalogo</h1>
-        <p class="lead text-body-secondary">Estos son los estilos que producimos</p>
+        <p class="lead text-body-secondary">Estos son los estilos que producimos, estilos tanto femeninos como masculinos e infantiles</p>
         <p>
           {{-- <a href="#" class="btn btn-primary my-2">Main call to action</a>
           <a href="#" class="btn btn-secondary my-2">Secondary action</a> --}}
@@ -210,6 +240,7 @@
   <div class="album py-5 bg-body-tertiary">
     <div class="container">
 
+      {{-- Aqui empiezan las tarjetas de cada uno de los estilos --}}
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
           <div class="card shadow-sm">
@@ -239,88 +270,140 @@
 
         <div class="col">
           <div class="card shadow-sm">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="450" src="{{ asset('assets/images/catalogo/jeanspalazzo.jpg')}}" alt="">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="450" src="{{ asset('assets/images/catalogo/jeans bootcut.jpg')}}" alt="">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Jeans Bootcut</p>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card shadow-sm">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="450" src="{{ asset('assets/images/catalogo/jeanspalazzo.jpg')}}" alt="">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="450" src="{{ asset('assets/images/catalogo/jeans cargo.jpg')}}" alt="">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
+              <p class="card-text">Jeans Cargo</p>
             </div>
           </div>
         </div>
 
         <div class="col">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <img class="bd-placeholder-img card-img-top" width="100%" height="450" src="{{ asset('assets/images/catalogo/jeans embroidered.jpg')}}" alt="">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
+              <p class="card-text">Jeans Bordados</p>
             </div>
           </div>
         </div>
+
         <div class="col">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <img class="bd-placeholder-img card-img-top" width="100%" height="450" src="{{ asset('assets/images/catalogo/jeans flare.jpg')}}" alt="">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
+              <p class="card-text">Jeans Bota Campana</p>
             </div>
           </div>
         </div>
+
         <div class="col">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <img class="bd-placeholder-img card-img-top" width="100%" height="450" src="{{ asset('assets/images/catalogo/jeans highwaist bota ancha.jpg')}}" alt="">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
+              <p class="card-text">Jeans Cintura Alta Bota Ancha Casual</p>
             </div>
           </div>
         </div>
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="450" src="{{ asset('assets/images/catalogo/jeans normal.jpg')}}" alt="">
+            <div class="card-body">
+              <p class="card-text">Jeans Regular</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="450" src="{{ asset('assets/images/catalogo/jeans skinny.jpg')}}" alt="">
+            <div class="card-body">
+              <p class="card-text">Jeans Skinny</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="450" src="{{ asset('assets/images/catalogo/jeans slim.jpg')}}" alt="">
+            <div class="card-body">
+              <p class="card-text">Jeans Slim Casual</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="450" src="{{ asset('assets/images/catalogo/jeans harem rotos w.jpg')}}" alt="">
+            <div class="card-body">
+              <p class="card-text">Jeans Harem Casual</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="450" src="{{ asset('assets/images/catalogo/jeans harem constranting w.jpg')}}" alt="">
+            <div class="card-body">
+              <p class="card-text">Jeans Harem Contrastantes</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="450" src="{{ asset('assets/images/catalogo/jeans sueltos.jpg')}}" alt="">
+            <div class="card-body">
+              <p class="card-text">Jeans Relaxed</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="450" src="{{ asset('assets/images/catalogo/jeans capri relaxed.jpg')}}" alt="">
+            <div class="card-body">
+              <p class="card-text">Jeans Capri</p>
+            </div>
+          </div>
+        </div> 
+
+        
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="450" src="{{ asset('assets/images/catalogo/jeans capri.jpg')}}" alt="">
+            <div class="card-body">
+              <p class="card-text">Jeans Capri Casual</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="450" src="{{ asset('assets/images/catalogo/jeans skinny men.jpg')}}" alt="">
+            <div class="card-body">
+              <p class="card-text">Jeans Skinny Hombre</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="450" src="{{ asset('assets/images/catalogo/jeans harem m.jpg')}}" alt="">
+            <div class="card-body">
+              <p class="card-text">Jeans Harem Hombre</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>

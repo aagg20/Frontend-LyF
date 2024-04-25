@@ -164,8 +164,8 @@
 <header data-bs-theme="dark">
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-      <img src="{{ asset('/assets/images/lyflogo5v2SM.png')}}" alt="">
-      <a class="navbar-brand" href="{{ route('catalogo') }}">Catalogo</a>
+      <img class="logolyf" src="{{ asset('/assets/images/lyflogo5v2SM.png')}}" alt="">
+      <a class="navbar-brand" href="#">Catalogo</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -280,7 +280,7 @@
       </div>
       <div class="col-md-5">
         <img src="{{ asset('assets/images/mapaG.jpg') }}" alt="">
-        {{-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> --}}
+
       </div>
     </div>
 
