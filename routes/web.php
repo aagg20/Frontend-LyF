@@ -3,11 +3,11 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('cover');
 });
 
-Route::get('cover', function () {
-    return view('cover');
+Route::get('contacto', function () {
+    return view('contacto');
 });
 
 Route::get('/carousel', function () {

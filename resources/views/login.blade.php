@@ -125,6 +125,7 @@
       </symbol>
     </svg>
 
+{{-- Dark or light view --}}
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
       <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
               id="bd-theme"
@@ -159,8 +160,8 @@
         </li>
       </ul>
     </div>
-
     
+{{--    Login  --}}
 <main class="form-signin w-100 m-auto">
   <form>
     <img class="mb-4" src="{{ asset('assets/images/lyflogo5v2.png')}}" alt="" width="280" height="50">
