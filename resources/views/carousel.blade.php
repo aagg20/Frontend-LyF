@@ -206,7 +206,7 @@
           <div class="carousel-caption text-start">
             <h1>Visita nuestro catalogo</h1>
             <p class="opacity-75">Aqui encontraras todos los estilos que ofrecemos</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Visitar</a></p>
+            <p><a class="btn btn-lg btn-primary" href="/catalogo">Visitar</a></p>
           </div>
         </div>
       </div>
@@ -216,7 +216,7 @@
           <div class="carousel-caption">
             <h1>Trabaja con nosotros</h1>
             <p>Aplica ya en nuestra plataforma</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Aplica ya</a></p>
+            <p><a class="btn btn-lg btn-primary" href="/contacto">Aplica ya</a></p>
           </div>
         </div>
       </div>
