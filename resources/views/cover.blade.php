@@ -55,10 +55,10 @@
       <img class="logo" src="{{ ("../assets/images/lyflogo5v2.png") }}" alt="logo">      
       <h3 class="float-md-start mb-0">Bienvenido!</h3>
       <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link active" aria-current="page" href="">Inicio</a>
+        <a class="nav-link active" aria-current="page" href="/catalogo">Catalogo</a>
         {{-- <a class="nav-link" href="#">Empleados</a> --}}
-        <a class="nav-link" href="">Contacto</a>
-        <a class="nav-link" href="#">Login</a>
+        <a class="nav-link" href="/contacto">Contacto</a>
+        <a class="nav-link" href="/login">Login</a>
       </nav>
     </div>
   </header>
